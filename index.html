@@ -15,11 +15,11 @@
          </table>
         <table class="table-card">
            
-            <thead>
+            <thead class="day-list">
                 <th>Sun</th>
                 <th>Mon</th>
                 <th>Tue</th>
-                <th>Wen</th>
+                <th>Wed</th>
                 <th>Thu</th>
                 <th>Fri</th>
                 <th>Sat</th>
@@ -34,8 +34,9 @@
             <button id="previous" onclick="previous()">Previous</button>
             <button id="next" onclick="next()">Next</button>
          </div>
-         <label for="month">Jump to:</label>
-         <select name="month" id="month" onchange="jump()">
+         <div class="jump-to">
+            <label for="month">Jump to:</label>
+            <select name="month" id="month" onchange="jump()">
             <option value=0>January</option>
             <option value=1>Februery</option>
             <option value=2>March</option>
@@ -49,9 +50,11 @@
             <option value=10>November</option>
             <option value=11>December</option>
          </select>
-         <label for="year">year</label>
+         <label for="year"></label>
          <select name="year" id="year" onchange="jump()" >
          </select>
+         </div>
+         
          <div class="today-date">
             <p id="current-date"></p>
          </div>
