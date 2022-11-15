@@ -1,0 +1,24 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.calendar-conatiner {
+
+    display: inline-block;
+    justify-content: center;
+
+}
+.bg-info {
+    background-color: teal;
+}
+.table-card {
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.table-card td {
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar 2022</title>
+</head>
+<body>
+     <div class="calendar-conatiner">
+        <table class="header">
+            <thead>
+                <h3 id="monthAndYear"></h3>
+            </thead>
+         </table>
+        <table class="table-card">
+           
+            <thead>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wen</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </thead>
+            
+            <tbody id="calendar-body">
+                <td></td>
+            </tbody>
+         </table>
+         
+         <div class="button-container">
+            <button id="previous" onclick="previous()">Previous</button>
+            <button id="next" onclick="next()">Next</button>
+         </div>
+         <label for="month">Jump to:</label>
+         <select name="month" id="month" onchange="jump()">
+            <option value=0>January</option>
+            <option value=1>Februery</option>
+            <option value=2>March</option>
+            <option value=3>April</option>
+            <option value=4>May</option>
+            <option value=5>June</option>
+            <option value=6>July</option>
+            <option value=7>August</option>
+            <option value=8>September</option>
+            <option value=9>October</option>
+            <option value=10>November</option>
+            <option value=11>December</option>
+         </select>
+         <label for="year">year</label>
+         <select name="year" id="year" onchange="jump()" >
+         </select>
+         <div class="today-date">
+            <p id="current-date"></p>
+         </div>
+     </div>
+     <script src="app.js"></script>
+</body>
+</html>
